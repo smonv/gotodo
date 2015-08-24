@@ -1,4 +1,10 @@
 {{define "title"}}Homepage{{end}}
 {{define "body"}}
-<h1>This is Homepage</h1>
+<h1>Todo List</h1>
+<div>
+  {{range .}}
+  <p>{{.Title}}</p>
+  <p>{{.Description}}</p>
+  {{end}}
+</div>
 {{end}}
